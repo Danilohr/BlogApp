@@ -64,7 +64,16 @@ app.get("/", (req, res) => {
         res.render("index", { postagens: postagens })
     }).catch(() => {
         req.flash("error_msg", "Houve um erro interno")
-        req.redirect("/404")
+        res.redirect("/404")
+    })
+})
+
+app.get("/postagens", (req, res) => {
+    Postagem.find().sort({ data: "desc" }).lean().then((postagens) => {
+        res.render("postagem/postagens", { postagens: postagens })
+    }).catch(() => {
+        req.flash("error_msg", "Houve um erro ao listar as postagens")
+        req.redirect("/")
     })
 })
 
