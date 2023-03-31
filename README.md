@@ -19,3 +19,6 @@ O projeto fullstack me fez aprender a trabalhar com bibliotecas como:
  - Handlebars: Toda a parte do html e sua integração com o backend da aplicação.
  - Mongoose: Biblioteca que modela os objetos do banco de dados MongoDB e os abstrai para a aplicação.
  - Passport: Gerenciamento de usuários e suas sessões.
+
+
+>[Link do curso](https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B)
